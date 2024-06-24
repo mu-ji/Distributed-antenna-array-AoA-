@@ -1,0 +1,8 @@
+06/24/2024
+
+Finished writing a rx code for nRF5340 and a tx code for nRF52840 based on ble.
+
+For now nRF5340 can get the packet and phase information, but the content of packet have some problems.
+And two thread are used for listening two serial output.
+
+Need add packet number in the packet to make sure two phase information are form same packet.
