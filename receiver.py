@@ -23,7 +23,7 @@ while True:
     byte  = ser.read(1)        
     rawFrame += byte
 
-    if rawFrame[-4:]==[255, 255, 255, 255]:
+    if rawFrame[-3:]==[255, 255, 255]:
         if len(rawFrame) == 648:
             received_data = rawFrame[:640]
             num_samples = 160
@@ -61,6 +61,7 @@ while True:
                 response_rssi = int(response_rssi.decode('utf-8'))
                 #print(iteration)
                 print(response_rssi)
+                print('packet_number:',rawFrame[-4])
                 #print('-------------------------------')
 
             except:

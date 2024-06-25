@@ -6,3 +6,12 @@ For now nRF5340 can get the packet and phase information, but the content of pac
 And two thread are used for listening two serial output.
 
 Need add packet number in the packet to make sure two phase information are form same packet.
+
+
+06/25/2024
+
+Added packet number in the packet and get currect packet.
+
+Added a visualization of this AoA
+
+The phase difference is not stable, meybe some bugs when collect phase information
