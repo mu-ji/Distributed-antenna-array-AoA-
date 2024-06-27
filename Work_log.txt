@@ -15,3 +15,11 @@ Added packet number in the packet and get currect packet.
 Added a visualization of this AoA
 
 The phase difference is not stable, meybe some bugs when collect phase information
+
+
+
+06/272024
+
+The problem is that the rx and tx side must use nRF5340
+
+Already fix the phase information bug, now it works currect.

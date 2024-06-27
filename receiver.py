@@ -50,8 +50,8 @@ while True:
             #plt.show()
 
             fig = plt.figure()
-            plt.plot([i for i in range(160)],phase_data)
-            plt.xlabel('samples number')
+            plt.plot([i*0.125 for i in range(160)],phase_data, marker='*')
+            plt.xlabel('us')
             plt.ylabel('phase')
             plt.show()
             
